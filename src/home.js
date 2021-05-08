@@ -19,7 +19,7 @@ function Home() {
         </nav>
         <h1 className="mb-5 mt-5">What is DataBook?</h1>
         <div className="container" style={{ backgroundColor: 'rgba(222, 245, 255)', borderRadius: '25px', width: '50%'}}>
-            <p className="fs-4">DataBook is a free open-source online web application that helps companies to manage
+            <p className="fs-4">DataBook is a free open-source online web application that helps companies manage
             their reservations easily from the web.</p>
             <p className="fs-4">If you want to make a reservation right now click <br></br>
                 <Link to="/reserve">
@@ -27,6 +27,7 @@ function Home() {
                 </Link>
             </p>
         </div>
+        <footer style={{ position: 'absolute', bottom: '0', width: '100%'}}>#CodeWeekHackathon #EUCodeWeek #HackathonGreece</footer>
     </div>
     
     );

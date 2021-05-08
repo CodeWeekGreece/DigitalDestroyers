@@ -72,7 +72,7 @@ function Reserve() {
             </div>
             </div>
             </div>
-            <select htmlFor="time" id="drop" className="mb-3">
+            <select htmlFor="time" id="drop" className="mb-1">
             <option value="09:00 - 09:30">09:00 - 09:30</option>
             <option value="09:30 - 10:00">09:30 - 10:00</option>
             <option value="10:00 - 10:30">10:00 - 10:30</option>
@@ -99,6 +99,7 @@ function Reserve() {
             <option value="20:30 - 21:00">20:30 - 21:00</option>
             <option value="21:00 - 21:30">21:00 - 21:30</option>
             </select><br></br>
+            <small>Unfortunately, in order to reduce overcrowding customers are only allowed 30 minutes inside the store</small><br></br>
             <DatePicker 
             selected={startDate}
             onChange={date => setStartDate(date)} 
@@ -106,7 +107,7 @@ function Reserve() {
             id="date-picker"
             minDate={new Date()}
             maxDate={now}
-            className="mb-3">
+            className="mb-3 mt-3">
             </DatePicker><br></br>
             <button className="btn btn-success mb-5" onClick={(e) => {
                 e.preventDefault();
